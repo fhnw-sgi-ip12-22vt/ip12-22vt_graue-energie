@@ -1,0 +1,29 @@
+= Systemidee
+
+
+== Kernaufgabe des Systems
+****
+Das System möchte Klarheit über die Auswirkungen und Entstehung grauer Energie schaffen. Dies soll spielerisch auf einem Spielfeld dargestellt werden mit Figuren wie Energieverbraucher, Energieproduzent und Umweltfaktoren. Bei diesem Simulationsspiel ist das Ziel möglichst ökonomisch und effizient Energie für einen Verbraucher zu generieren mit der Herausforderung nicht zu viel Umweltbelastungspunkte zu erzeugen. Dabei wird der Spieler mit Infotexten aufgeklärt, was dem System auch einen Lernenden Aspekt bietet.
+Die Fachdomäne besteht vorallem aus den Themen Energie, Umwelt und Technik, ausserdem werden die Themen Wirtschaft, Gesellschaft, Politik und Wissenschaft angeschnitten.
+Wir beschäftigen uns mit der Entstehung und Auswirkung von grauer Energie und ihre Effekte auf die Umwelt und die Gesellschaft.
+****
+== Kategorie von System
+****
+Unser System setzt sich aus den Kategorien eines eingebetteten Systems sowie einem System mit Echtzeitanforderungen zusammen. Es ist ein eingebettetes System, da es sich um ein Spiel handelt, welches auf einem Spielfeld gespielt wird. Figuren können verschoben und gesetzt werden und Ziel des Spiels ist es, eine bestimmte Menge an Energie zu produzieren, welche für den Verbraucher ausreicht und zudem muss ein Klimaziel (möglichst wenig Umweltbelastungspunkte zu produzieren) erreicht werden. Zusätzlich ist es ein System mit Echtzeitanforderungen, da es in Echtzeit gespielt wird und auf die Aktionen des Spielers werden sofort reagiert in Form eines Feedbacks auf dem Bildschirm.
+****
+
+== Wesentliche Qualitätsanforderungen
+****
+Unsere beiden Hauptqualitätsanforderungen für dieses System sind die Benutzbarkeit und die Zuverlässigkeit. Die Benutzbarkeit soll durch eine intuitive Bedienung und eine gute Übersichtlichkeit des Spielfeldes erreicht werden. Uns ist es wichtig, dem Spieler das Thema verständlich beibringen zu können, während er dabei Spaß hat und selber an eine Lösung für das Spiel kommen kann. Die Zuverlässigkeit soll durch eine gute Fehlerbehandlung erreicht werden. Die Informationen, welche wir darstellen, sollen stets korrekt sein und der Spieler soll nicht durch Fehler des Systems abgelenkt werden. Ausserdem sollen die Figuren Robust genug sein eventuelles Fallen-lassen zu überstehen, genauso muss das gesamte Spiel in der Lage sein mindestens ein Jahr unbeschädigt und voll funktionsfähig zur verfügung zu stehen.
+****
+
+== Relevante Stakeholder
+****
+Relevante Stakeholder unseres Systems sind unter anderem der Kunde, er ist derjenige, der das System bestellt hat und somit die Anforderungen an das System definiert hat. Anwender wollen aus dem System lernen bzw. spielerisch unterhalten werden. Primeo Energie kann ebenfalls als Stakeholder (Sponsor) gewertet werden, da er unser System in Zukunft betreiben wird. Die FHNW ist der Auftraggeber des Projektes und stellt uns ebenfalls Material zur verfügung. Nicht zu vergessen ist das Team selbst, welches ebenfalls Stakeholder sind.
+****
+
+== Schnittstellen zu externen Systemen
+****
+Nachbarsystem, zu welchem Schnittstellen existieren müssen, sind unter anderem:
+-
+****

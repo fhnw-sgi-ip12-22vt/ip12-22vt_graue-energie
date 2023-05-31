@@ -1,0 +1,22 @@
+= Coding Conventions
+
+== Verwendete Konventionen
+
+Wir werden die link:https://google.github.io/styleguide/javaguide.html[Google Java Guidelines] verwenden. Darauf kann verwiesen werden bei einer Unstimmigkeit beim Code Review. Ebenfalls werden auch Prinzipien und Best-Practices vom Buch _"Clean Code" (von Robert C. Martin)_ benutzt. In der folgenden Liste wird zusammen gefasst welche Punkte am wichtigsten sind. Diese ist eine Zusammenfassung der Google Java Guidelines und von _Clean Code_.
+
+.*Hier sind wichtige Punkte noch einmal aufgelistet:*
+* Benennung
+** Java-Dateien, Klassennamen und Enums werden mit grossem Anfangsbuchstaben und dann CamelCase benannt (UpperCamelCase).
+** Variablen und Methoden sind im lowerCamelCase zu schreiben (erster Buchstabe klein geschrieben und bei jedem folgende Wort im Namen wird der Anfangsbuchstabe gross geschrieben).
+*** Ausnahme bildet eine Konstante. Diese wird upperCase (Alles gross geschrieben) und mit "_" (Underscores) zwischen Wörtern geschrieben (UpperSnakeCase).
+** Namen sollen möglichst aussagekräftig, zweckbeschreibend und aus zu sprechend sein.
+* Kommentare
+** Kommentare im Code sollen möglichst vermieden werden. Der Code selber soll selbsterklärend sein. Falls der Code Kommentare braucht soll über ein Refactoring nachgedacht werden (muss mit dem Code-Reviewer angeschaut werden).
+** Nicht gebrauchter Code soll nicht auskommentiert werden. Falls der Code später gebraucht wird soll er in eine eigene Methode geschrieben werden und entsprechend einen Kommentar über der Methode erklären wofür der Code noch gebraucht wird. Wenn der Code nicht mehr gebraucht wird soll er gelöscht werden.
+* Funktionen
+** Sie sollen möglichst klein sein und nur das machen was der Funktionsname sagt (nur eine Aufgabe erfüllen).
+
+
+== Sicherstellung der Einhaltung der Konventionen
+
+Jede Code-Änderung, welche auf den Main-Branch gepusht werden soll, muss mindestens von einer zweiten Person angeschaut werden und erst wenn diese Person den Code Review genehmigt kann der Code gemerged werden. Der Code-Reviewer überprüft den Code primär auf Richtigkeit und auf Fehler, aber auch ob die Coding Conventions eingehalten werden. Zusätzlich hat jeder die link:https://google.github.io/styleguide/javaguide.html[Google Java Guidelines] im IntelliJ als Code Style Schema eingebunden (link:https://www.cs.technik.fhnw.ch/confluence20/display/VT122207/Google+Java+Guidelines+in+IntelliJ+einbinden[Anleitung im Confluence]) und die bearbeiteten Dateien werden beim Commit via "Reformat Code" automatisch formatiert.

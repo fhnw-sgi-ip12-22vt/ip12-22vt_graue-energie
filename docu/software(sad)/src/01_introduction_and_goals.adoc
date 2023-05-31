@@ -1,0 +1,65 @@
+[[section-introduction-and-goals]]
+==  Einführung und Ziele
+
+=== Aufgabenstellung
+
+[role="arc42help"]
+****
+.Inhalt
+Unser Projekt beschäftigt sich mit der Auswirkung der Grauen Energie auf unsere reale Welt. Wir wollen dieses Thema mithilfe eines physischen Modells näher beleuchten und die Auswirkungen auf Menschen und Umwelt darstellen. Dabei soll den Spielern die Möglichkeit gegeben werden, die Auswirkungen der Grauen Energie auf die Umwelt zu beobachten und zu beeinflussen. Das Ziel hierbei besteht darin den Wissensstand spielerisch zu erweitern
+
+.Motivation
+Umweltbelastungspunkte ist ein Thema, über welches sehr viele Menschen noch nicht Bescheid wissen. Wir möchten mit unserem Projekt die Aufmerksamkeit auf dieses Thema lenken und die Menschen dazu motivieren sich mit diesem Thema auseinanderzusetzen. Dabei wollen wir nicht nur mit stumpfen Fakten arbeiten und dadurch Menschen langweilen, sondern das Thema spielerisch aufbereiten. Wir wollen den Menschen die Möglichkeit geben sich mit dem Thema auseinanderzusetzen und dabei auch noch Spaß haben.
+
+.Form
+
+Auszug aus den Produktzielen unserer Confluence https://www.cs.technik.fhnw.ch/confluence20/pages/resumedraft.action?draftId=79987224&draftShareId=2f070ffa-541b-4576-b020-8e793160c81c[Seite] 
+|===
+|ID |Name |Beschreibung|Messung|Soll-Wert|
+
+| _Z01_ | _Bewusstsein für Umweltbelastungspunkte_ | _Die User sollen lernen, was "Umweltbelastungspunkte" sind und wie es unsere Umwelt beeinflusst._ |_In familiären Kreis, in einer Schule mit einem Prototypen, Teamintern_ |_Die User können sich unter grauer Energie etwas vorstellen und werden dies in Zukunft als ein weiteren umweltbelastenden Aspekt in Kenntnis nehmen._ |
+
+| _Z02_ | _Aufklärung Energieverbrauch_ | _Veranschaulichung durch Stromproduktionsverfahren auf das System in spielerischer Form. Durch verschiedene Energiequellen wie Windkraftwerke, Wasserkraftwerke etc._ | In familiären Kreis, in einer Schule mit einem Prototypen, Teamintern_ |_Die User wissen, welche Faktoren den Energieverbrauch mehr und weniger belasten._ |
+
+| _Z03_ | _Spielspass_ | _Die User sollen Spass während des Spielens haben_ | In familiären Kreis, in einer Schule mit einem Prototypen, Teamintern_ | _Die User haben während des Spielens Spass daran und lernen dadurch schnell und unkompliziert._ |
+|===
+
+****
+
+=== Qualitätsziele
+
+[role="arc42help"]
+****
+.Inhalt
+In diesem Kapitel werden die Qualitätsziele des Projekts aufgeführt. Diese Qualitätsziele sind die Grundlage für die Erstellung des Qualitätsplans. Die Qualitätsziele in diesem Projekt sind unten aufgeführt.
+
+.Motivation
+Unsere Qualitätsziele bestehen hauptsächlich aus der Benutzbarkeit und der Zuverlässigkeit. Diese beiden Ziele sind relevant für uns da sie die Grundlage für ein voll funktionsfähiges Spiel bieten.
+
+.Form
+|===
+|Qualitätsziel |Begründung 
+| _Benutzbarkeit_ | _Dem Spieler soll der Umgang mit dem Spiel so simpel wie möglich gemacht werden. Durch eine einfache Beschreibung sowie Spielablauf soll der Spassfaktor maximiert werden und dem Spieler soviel Wissen wie möglich mitgeteilt werden_ 
+| _Zuverlässigkeit_ | _Das Spiel soll eine gewisse Robustheit und Langlebigkeit bieten können. Durch die Qualität sowie Zusammensetzung des Spielbretts sowie der Figuren soll dieses Ziel erreicht werden._ 
+| _Effizienz_ | _Das System soll möglichst wenig Ressourcen oder externe Schnittstellen in Anspruch nehmen müssen. Durch die Verwendung von einfachen Komponenten soll dieses Ziel erreicht werden._
+|===
+****
+
+=== Stakeholder
+
+[role="arc42help"]
+****
+.Inhalt
+In diesem Abschnitt werden die Stakeholder sowie ihre Erwartungshaltung beschrieben.
+
+[cols="1,1,2" options="header"]
+|===
+|Rolle |Kontakt |Erwartungshaltung
+| _Kunde_ | _Stefan Meichtry_ | _Der Kunde stellt Anforderungen an das System welche erfüllt werden sollen. Er bringt laufend neue Ideen für das Projekt und ist die erste Ansprechperson für allfällige Fragen_
+| _Anwender/User_ | _Individuell_ | _Die Anwender oder User des Systems sollen durch das Spiel sowohl belehrt als auch Unterhalten werden. Die Erwartung hierbei ist nach dem Ende des Spieles besser über Umweltbelastungspunkte Bescheid zu wissen._ 
+| _Sponsor_ | Primeo Energie | _Der Sponsort wird zukünftig unser System betreiben sowie austellen. Wichtig für den Sponsor ist dabei die Langlebigkeit des Systems, sodass es möglichst lange fehlerfrei läuft._ 
+| _Auftraggeber_ | FHNW | _Der Auftraggeber des Systems setzt das Projekt in Gang, er kann für Material sowohl physisch als auch für Wissen bereitstehen._ 
+| Team | Gruppe Umweltbelastungspunkte | _Das Team besteht aus mehreren Individuen welches verschiedenste Fachwissen bereitstellen um das System zu planen, entwickeln und umzusetzen. Dabei bringt jedes Mitglied sein eigenes Fachwissen in das Projekt ein um einander zu unterstützen und das Projekt abzuschliessen._ 
+|===
+****
+

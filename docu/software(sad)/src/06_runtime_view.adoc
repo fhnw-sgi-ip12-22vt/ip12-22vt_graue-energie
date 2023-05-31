@@ -1,0 +1,43 @@
+[[section-runtime-view]]
+== Laufzeitsicht
+
+[role="arc42help"]
+****
+In der Laufzeitsicht wird der Vorgang des Programmes einmal durchgespielt. Hierfür wurde ein Sequenzdiagramm erstellt, welches einen groben Ablauf des Programmes darstellt. Die einzelnen Schritte werden in der Tabelle näher erläutert.
+
+
+
+[cols="1,1" options="header"]
+Grundlegende Beschreibung der Subsystem und Ablauf innerhalb der Laufzeit des Programms
+|===
+|Subsystem |Ablauf
+ | _Benutzer_ |  _Der Benutzer Spielt das Spiel und platziert Figuren_
+| _RFID Scanner_ |  _Sie laufen während des Gesamten Prozesses, um eventuelle Änderungen direkt zu registrieren und dem Ardiuno zu senden. Die Daten welche übertragen werden sind sowohl die ID des Chips als auch die des Scanners._
+| Arduino |  _Liest die Scanner und ihre dazugehörenden Daten ein._
+| _Umweltbelastung Controller |  _Java Controller welcher den Empfang der Daten regelt und diese weitersendet._ 
+| _Umweltbelastung Model |  _Java Model welche die Datenverarbeitung und Berechnung der Umweltbelastungspunkte übernimmt._ 
+| _Umweltbelastung View |  _Java View welche das Empfangen der Daten regelt und diese dem Display anzeigt._ 
+| _Display_ |  _Das Display erhält die ausgewertete Daten der Java Klasse. Es zeigt dem Benutzer den die Energieproduktion sowie die dabei entstehende Umweltbelastung._ 
+|===
+
+****
+
+=== _<Bezeichnung Laufzeitszenario 1>_
+
+****
+
+image::Laufzeitsicht_Szenario_1.png["Laufzeitsicht Szenario 1"]
+
+Genereller Ablauf des Programms nach platzieren einer Figur
+
+****
+
+=== _<Bezeichnung Laufzeitszenario 2>_
+
+****
+
+image::Laufzeitsicht_Szenario_2.png["Laufzeitsicht Szenario 1"]
+
+Genereller Ablauf des Programms nach entferen einer Figur
+
+****

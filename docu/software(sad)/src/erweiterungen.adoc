@@ -1,0 +1,96 @@
+[[section-improvements]]
+== Erweiterungen
+
+[role="arc42help"]
+
+=== Labels / Anweisungen übersetzen
+
+****
+
+Die auf dem Display angezeigten Anweisungen, sind im Repository, in der Datei "src/main/resources/json/labels.json" abgespeichert.
+Diese können dort angepasst werden.
+
+Die auf dem Display angezeigten Anweisungen, sind im Repository, in der Datei "src/main/resources/json/instructionText.json" abgespeichert.
+Diese können dort angepasst werden.
+
+****
+
+=== Quizfrage hinzufügen / bearbeiten / entfernen
+
+****
+
+Die Fragen werden in der Datei "src/main/resources/json/questions.json" gespeichert.
+
+Jede Frage muss das Folgende Format einhalten:
+[source,json]
+----
+{
+  "question": "Zu welcher Jahreszeit produziert eine Solaranlage am meisten Strom?",
+  "answers": [
+    "Frühling",
+    "Sommer",
+    "Herbst",
+    "Winter"
+  ],
+  "correctAnswerId": 1
+}
+----
+"question": Ein String mit der Frage.
+
+"answers": Ein Array mit genau 4 Strings, welche die Antwortmöglichkeiten beinhalten.
+
+"correctAnswerId": ID (0-3) welche der Antwortmöglichekeiten korrekt ist.
+
+
+Platzieren sie die Frage im Array mit der ID der Figur, zu welcher die Frage gehört. Um die ID aufzulösen können die Enums "src/main/java/ch/fhnw/graueenergie/entity/EnergyProducer.java" und "src/main/java/ch/fhnw/graueenergie/entity/EnergyConsumer.java" verwendet werden.
+
+****
+
+=== Neuen Figurentypen hinzufügen
+
+****
+
+Um einen neuen Verbraucher hinzuzufügen kann dieser in der Datei "src/main/java/ch/fhnw/graueenergie/entity/EnergyConsumer.java" hinzugefügt werden.
+
+Der Verbraucher muss folgendermassen erfasst werden:
+[source,java]
+----
+SOLAR_PANELS(5, 70, 164, BoardPositionType.WATER_NEEDED)
+----
+Die erste Zahl ist die ID und sollte immer weiter hoch zählen, die Zweite Zahl die Menge an produzierter Energie, die dritte Zahl die Menge der dabei entstandenen Umweltbelastungspunkte und der vierte Parameter auf welchen Positionen die Figur platziert werden kann.
+
+
+Um einen neuen Produzenten hinzuzufügen kann dieser in der Datei "src/main/java/ch/fhnw/graueenergie/entity/EnergyProducer.java" hinzugefügt werden.
+
+Der Produzent muss folgendermassen erfasst werden:
+[source,java]
+----
+INDUSTRIAL_AREA(12, 1_500, 1_000_000, BoardPositionType.WATER_NEEDED)
+----
+Die erste Zahl ist die ID und sollte immer weiter hoch zählen, die Zweite Zahl die benötigte Energie um diesen Verbraucher zu versorgen, die dritte Zahl das Maximum an Umweltbelastungspunkten die dabei entstehen dürfen und der vierte Parameter auf welchen Positionen die Figur platziert werden kann.
+
+Um die neuen Figuren hinzuzufügen siehe nächstes Kapitel *Neue Figur hinzufügen*
+
+****
+
+=== Neue Figur hinzufügen
+
+****
+
+Im Repository in der Datei "src/main/java/ch/fhnw/graueenergie/mapper/CardToEnergyEntityIdMapper.java" die ID des RFID Chips der Figur hinzufügen. 
+
+Die ID hier im switch case der map Methode hinterlegen. Damit das System erkennt, um was für eine Figur es sich handelt, ist es wichtig die ID bei dem richtigen EnergyActor zu hinterlegen.
+
+Hier ein Beispiel, wie die ID "EA84CDCF" als Windkraftwerk hinzugefügt werden kann.
+
+[source,java]
+----
+public static Integer map(String value) {
+    return switch (value) {
+      case "E941D2CF", "EA84CDCF" -> EnergyProducer.WIND_POWER_PLANT.id;
+      default -> EnergyProducer.NO_ENERGY_PRODUCER.id;
+    };
+  }
+----
+
+****

@@ -1,0 +1,18 @@
+[[section-solution-strategy]]
+== Lösungsstrategie
+
+[role="arc42help"]
+****
+.Inhalt
+Im Ersten Schritt werden die Qualitätsziele aus Abschnitt 1 mit einem passenden Architekturansatz gegenübergestellt. Zudem wollen wir auch eine Möglichkeit aufzeigen, wie diese Ziele gemessen und somit das Erfüllen der Ziele überprüft werden kann.
+
+|===
+|Qualitätsziel |Architekturansatz |Messung
+| _Einfache Bedienung (Benutzbarkeit)_ | _Klare Beschriftungen der Knöpfe. Einfache Design-Entscheidungen. Klare Anweisungen vor und während des Spiels._ |_Benutzerumfrage, der Benutzer soll in einer kurzen Umfrage beschreiben ob das Spiel für ihn logisch aufgebaut und klar beschrieben war oder ob er sich zu einem bestimmten Zeitpunkt orientierungslos fühlte bzw. nicht wusste was der nächste Schritt für Ihn ist._
+| _Robustes System (Zuverlässigkeit)_ | _Das System ist robust genug das es sich zu jedem Zeitpunkt einwandfrei bedienen lässt. Es kann kleiner Schläge oder Krafteinwirkungen standhalten und soll ausserdem auch über mehrere Stunden eingeschaltet bleiben können. Die Figuren sollen Stürze aus einer kleinen Höhe überstehen können und ebenfalls eine gewisse Langlebigkeit haben._ | _Die Figuren können getestet werden in dem wir sie einem kleinen Sturz aus einer Höhe von 1m auf eine harte Oberfläche fallen lassen. Die Benutzung des Systems kann getestet werden indem wir es über mehrere Stunden laufen lassen und dabei die Reaktionen des Systems auf die Benutzung beobachten._ 
+| _Ressourcenschonend (Effizienz)_ | _Das System soll möglichst wenig externe Schnittstellen benötigen. Die Informationen sowie Berechnungen sollen innerhalb weniger Funktionen durchgeführt werden um somit das System an sich schonen zu können und die Effizienz zu steigern._ | _Die Ressourcenschonung kann getestet werden indem wir das System über mehrere Stunden laufen lassen und dabei die Ressourcenverbrauch des Systems beobachten. Wir können auch die Anzahl der Funktionen die das System benötigt um die Informationen zu verarbeiten und zu berechnen beobachten._
+|===
+
+****
+
+

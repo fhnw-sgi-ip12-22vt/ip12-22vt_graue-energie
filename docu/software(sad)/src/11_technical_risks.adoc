@@ -1,0 +1,13 @@
+[[section-technical-risks]]
+== Risiken und technische Schulden
+
+[role="arc42help"]
+****
+.Inhalt
+In diesem Abschnitt werden die Risiken und technische Schulden des Systems beschrieben. Die Tabelle wird laufend auf der Conflunce Seite des Projekts aktualisiert und nach Abschluss des Projektes in diesem Abschnitt angezeigt. Die Tabelle ist dabei nach Priorität sortiert.
+
+Conflunce Seite: https://www.cs.technik.fhnw.ch/confluence20/display/VT122207/Risikoliste
+
+
+****
+

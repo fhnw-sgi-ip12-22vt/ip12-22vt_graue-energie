@@ -1,0 +1,111 @@
+[[section-building-block-view]]
+== Bausteinsicht
+
+[role="arc42help"]
+****
+
+In diesem Abschnitt wird das System und seine Ebenen beschrieben. Unser System ist in sich geschlossen und benötigt keine Fremd- oder Nachbarsysteme.
+image::Bausteinschicht.png["Bausteinschicht unseres Systems"]
+
+Beschreibung der Subsysteme:
+
+[cols="1,1" options="header"]
+|===
+|Subsystem |Beschreibung 
+| _Model_ |  _Das Model ist für die Verarbeitung der Informationen verantwortlich._
+| _View_ |  _Die View ist dafür verantwortlich die Informationen dem Benutzer anzuzeigen._ 
+| _Controller_ |  _Der Controller ist für das Einlesen der Daten Verantwortlich._ 
+|===
+
+****
+=== Schicht 1
+
+==== <Model (Blackbox)>
+
+****
+
+Zweck: _Das Model ist für die Verarbeitung der Informationen verantwortlich, dies beinhaltet die Berechungen der Energieformel als auch die auswahl passender Info- und Anweisungstexte für das Display. Zudem verwaltet sie den Aktuellen State des Spieles._
+
+*Schnittstellen*
+
+image::modelInterface.png["Model"]
+
+|===
+| changeBoardState(ScannerEntity[]) | Nimmt ein Array von ScannerEntities entgegen. Diese repräsentieren den aktuellen Zustand der Karte. Diese Daten werden verwendet, um die Informationen zu bestimmen, die auf dem Display angezeigt werden, und um sie an die View zu übergeben.
+|===
+
+****
+
+==== <View (Blackbox)>
+
+****
+
+Zweck: _Die View ist dafür verantwortlich die Informationen dem Benutzer anzuzeigen. Sie nimmt die aufbereiten Informationen des Models entgegen und zeigt diese Auf dem Display an._
+
+*Schnittstellen*
+
+image::view.png["View"]
+
+|===
+| updateView(DisplayState) | Diese Funktion akzeptiert einen DisplayState und zeigt die darin enthaltenen Daten auf dem Display an.
+|===
+
+****
+
+==== <Controller (Blackbox)>
+
+****
+
+Zweck: _Der Controller ist für das einlesen der Daten Verantwortlich, er Liest die Daten der RFID Scanner und der Buttons ein und übermittelt diese an das Model._
+
+*Schnittstellen*
+
+image::controllerBlackbox.png["Controller"]
+
+|===
+| start() | Das Auslesen der RFID-Scanner / der Buttons wird gestartet. Der Controller sendet die gelesenen Daten kontinuierlich an das Modell. 
+| stop() | Stopt das Auslesen der RFID-Scanner / der Buttons.
+|===
+****
+
+=== Schicht 2
+
+==== <Model (Whitebox)>
+
+****
+
+image::modelWhitebox.png["Model"]
+
+|===
+| EnergyCalculatorModel | Das EnergyCalculatorModel beihnhaltet die Energieformel, es berechnet produzierte Energie und die Umweltbelastungspunkte die dabei enteht.
+| QuizModel | Das QuizModel wählt bei einer Änderung eine Quizfrage aus, die zur platzierten Figur passt.
+| ChangeDetectorModel | Das ChangeDetectorModel ist dafür zuständig festzustellen, ob sich die Figuren auf dem Spielfeld verändert haben.
+| InstructionTextModel | Das InstructionTextModel wählt eine passende Anweisung für den Spieler.
+|===
+
+****
+
+==== <View (Whitebox)>
+
+****
+
+image::viewWhitebox.png["View"]
+
+|===
+| DisplayView | Die Display View setzt die Anzeige der Daten mit JavaFx um.
+|===
+
+****
+
+==== <Controller (Whitebox)>
+
+****
+
+image::controllerWhitebox.png["Controller"]
+
+|===
+| SerialScannerController | Der SerialScannerController liest die RFID-Scannerdaten über die Serielle Schnittstelle des Raspberrypi ein.
+| Pi4jButtonController | Der Pi4jButtonController verwendet Pi4J um zu erkennen, wenn ein Button gedrückt wird.
+|===
+
+****

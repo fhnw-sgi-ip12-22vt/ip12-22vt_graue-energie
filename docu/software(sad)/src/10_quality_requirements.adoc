@@ -1,0 +1,36 @@
+[[section-quality-scenarios]]
+== Qualitätsanforderungen
+
+[role="arc42help"]
+****
+.Inhalt
+In diesem Abschnitt werden die Qualitätsziele, welche im Abschnitt 1.2 definiert wurden konkretisiert. Dafür wird zusätzlich ein Qualitätsbaum erstellt und verschiedene Anforderungen zu den jeweiligen Punkten definiert.
+****
+=== Qualitätsbaum
+
+[role="arc42help"]
+****
+
+image::Qualitaetsbaum.png[Erste Version des Qualitätsbaums,640,480]
+
+TODO: Erweitern des Qualitätsbaums
+
+****
+
+=== Qualitätsszenarien
+
+[role="arc42help"]
+****
+Hier werden die verschiedenen Szenarien, welche aus dem Qualitätsbaum abgeleitet werden, spezifiziert und konkretisiert.
+
+|===
+|ID des Szenarios |Beschreibung 
+| _A1_ | _Durch ein intuitives UI soll sichergestellt werden das der Spieler sich ohne grosse Anstrengungen im Spiel zurechtfinden kann. Dies reicht von offensichtlichen Schaltflächen für Start bis hin zu einer in einfacher Sprache gehaltenen Text welcher kurz und knapp das Szenario erklärt und wie der Spieler das Spiel gewinnen kann._ 
+| _B1_ | _Das Spiel soll eine hohe Zuverlässigkeit bieten, wodurch es auf lange Sicht einsatzbereit ist. Es soll unter keinen Umständen Fehler in der Software geben, welche das Spiel beinträchtigen oder sogar zum Absturz führen. Ausserdem soll durch die Qualität der Hardware gewährleistet werden das es nicht kaputt gehen kann. Dazu zählen Figuren welchen einen Sturz auf Brusthöhe überstehen sollen als auch das Spielbrett an sich welche kleinere Krafteinwirkungen überdauern._
+| _C1_ | _Durch eine gesteigerte Effizienz soll es dem System möglich sein ohne grossen Aufwand Echtzeitdaten über den Status des Chips auf dem Scanner zu übermitteln._
+| _D1_ | _Die Figuren sollen robust und widerstandsfähig sein. Sie sollen einen Sturz von der Brusthöhe überstehen sollen. Ausserdem sollen die Figuren kratzfest sein und nicht einfach verkratzt werden können durch beispielsweise Fingernägel._
+|===
+
+****
+
+

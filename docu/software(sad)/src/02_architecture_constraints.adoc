@@ -1,0 +1,50 @@
+[[section-architecture-constraints]]
+== Randbedingungen
+[role="arc42help"]
+
+=== Randbedingungen für den Betrieb
+****
+.Inhalt
+In der folgenden Tabelle sind die Randbedingungen aufgelistet, unter welchen unser System korrekt funktioniert.
+|===
+|ID der Randbedingung |Name |Beschreibung
+| _RB001.1_ | _Umgebung_ | _Das System befindet sich in einem gedeckten Raum und ist nicht der Natur ausgesetzt._
+| _RB001.2_ | _Lichtverhältnisse_ | _Das System befindet sich in einem Raum mit gedimmten Lichtverhältnissen und Lampen an der Decke._
+| _RB001.3_ | _Position_ | _Das System steht auf einem flachen und ebenen Boden mit einem Freiraum von 4x4 Meter und nicht vor einem Fenster._
+| _RB002.1_ | _Wärmeeinfluss_ | _Das System befindet sich an einem Ort, an welchem es nicht über 30°C warm wird._
+| _RB002.2_ | _Feuer_ | _Das System wird nicht Feuer oder anderen heissen Naturgewalten ausgesetzt._
+| _RB003.1_ | _Kälteeinfluss_ | _Das System wird befindet sich an einem Ort, an welchem es nicht unter -10°C kalt wird._
+| _RB003.2_ | _Wasser_ | _Das System kommt nicht mit Wasser oder anderen Flüssigkeiten in Kontakt._
+| _RB003.3_ | _Luftfeuchtigkeit_ | _Das System befindet sich an einem Ort mit einer Luftfeuchtigkeit von maximal 70%._
+| _RB004.1_ | _Strom_ | _Das System befindet sich in der Nähe einer gewöhnlichen und funktionierenden Steckdose und wird mit Strom versorgt._
+| _RB005.1_ | _Lärmfaktor_ | _Aufgrund der Buttons und der entstehenden Diskussionen während dem Spielen befindet sich das System an einem Ort, an welchem Lärm erlaubt ist._
+| _RB006.1_ | _Gewalteinfluss_ | _Das System wird sorgfältig behandelt._
+|===
+****
+
+==== Vorgaben für die Entwicklung
+
+****
+.Inhalt
+Die Vorgaben, welche für die Entwicklung notwendig sind. Sie sind nicht Teil des Systems, sondern beeinflussen es.
+
+|===
+|ID der Vorgabe  |Begründung
+| _V001_ | _Das System wird auf dem Raspberry PI betrieben_
+| _V002_ | _Die Programmiersprache ist Java._
+| _V003_ | _Das System muss "Offline" verfügbar sein._
+| _V004_ | _Das System soll einen gewissen Spassfaktor besitzen und nicht nur Informationen liefern._
+| _V005_ | _Robustheit und Transportfähigkeit_
+|===
+****
+
+
+****
+.Sonderfall
+
+Aufgrund der Komplexität welchem unser RasperryPi ausgesetzt ist, ist es nicht möglich, dass das System ausschliesslich mit Java programmiert wird. Da gewisse Einschränkung aufgrund der Hardware nicht umgangen werden können, wird das System mit Java und zusätzlich Python programmiert. Mehr zu dieser Erweiterung des Systems ist in den späteren Kapiteln zu finden. Aufgrund dieser Einschränkung haben wir uns das Einverständnis von Herrn Robert Van Burg eingeholt welchen diesen Sonderfall akzeptiert hat. Nachliegend kann diese Schriftliche Erlaubnis eingesehen werden.
+
+image::Python_Sondererlaubnis.png["Python Sondererlaubnis"]
+****
+
+

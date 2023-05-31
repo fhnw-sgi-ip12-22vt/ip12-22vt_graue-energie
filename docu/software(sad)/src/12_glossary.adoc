@@ -1,0 +1,75 @@
+[[section-glossary]]
+== Glossar
+
+[role="arc42help"]
+****
+.Inhalt
+In diesem Abschnitt werden die wichtigsten Fachbegriffe und Abkürzungen erklärt.
+
+
+****
+
+[cols="e,2e, 3e" options="header"]
+|===
+|Begriff |Definition |Kommentar
+
+|_TC_
+|_Team-Coach_
+|_Abkürzung für unseren Team-Coach Frau Dubach_
+
+|_Kunde_
+|_Stefan Meichtry_
+|_Mit Kunde ist theoretisch immer Herrn Meichtry gemeint_
+
+|_Gamification_
+|_Spieleinbettung_
+|_Beschreibt die Einbettung von Elementen, welche das Produkt einem Spiel ähnlicher machen._
+
+|_Issues_
+|_Arbeitspakete_
+|_Beschreibt die einzelnen Arbeitspakete auf Jira_
+
+|_Reset-Funktion_
+|_Spielneustart_
+|_Beschreibt die Funktion, welche das Spiel von vorne starten lässt.
+
+|_PM_
+|_Projektmanager_
+|_Abkürzung_
+
+|_SA_
+|_Software Architekt_
+|_Abkürzung_
+
+|_RE_
+|_Requirements Engineer_
+|_Abkürzung_
+
+|_QM_
+|_Qualitätsmanager_
+|_Abkürzung_
+
+|_TM_
+|_Testmanager_
+|_Abkürzung_
+
+|_UM_
+|_Usability-Manager_
+|_Abkürzung_
+
+|_SC_
+|_Source Code_
+|_Abkürzung_
+
+|_IM_
+|_Informationsmanager_
+|_Abkürzung_
+
+|_Energiequelle_
+|_Figur, welche normalerweise Energie erzeugt_
+|_Beispielsweise ein Atomkraftwerk, Wasserkraftwerk, Solaranlage, Windkraftwerk, Kohlekraftwerk, etc._
+
+|_Stromverbraucher_
+|_Figur, welche Energie benötigt_
+|_Beispielsweise eine Stadt, Dorf, Industriegebiet_
+|===

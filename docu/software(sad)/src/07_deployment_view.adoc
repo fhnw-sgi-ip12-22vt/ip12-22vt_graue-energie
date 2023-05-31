@@ -1,0 +1,258 @@
+[[section-deployment-view]]
+== Verteilungssicht
+
+=== Das System starten
+
+****
+Das System startet automatisch sobald der Spielkasten mit Strom versorgt wird.
+****
+
+=== Deployment
+
+[role="arc42help"]
+****
+
+image::deploymentdiagram.png[]
+
+Components
+|===
+| *Component* | *Dadurch erfüllte Requirements*
+| EnergieFormel | Diese Applikation berechnet die Energieformel, sie nimmt die Daten der Scanner entgegen verarbeitet diese und zeigt die relevanten Informationen auf dem Display an.
+| SchannerLesen | Diese Applikation ist für das Auslesen der RFID Sensoren verantwortlich.
+|===
+
+Deployment Specs
+
+|===
+| *deployment spec* | *Anleitung*
+| deploySpielkasten | <<Spielkasten zusammenbauen>>
+| deployUmweltbelastung | <<Software Umweltbelastung auf den RaspberryPi laden und starten>>
+| deployRaspberryPi | <<RaspberryPi aufsetzen>>
+| deployReadScanners | <<Software ReadScanners auf den Arduino laden>>
+| deployRFIDScanners | <<RFID Scanner verkabeln>>
+| deployButtons | <<Buttons Verkabeln>>
+| deployFiguren | <<Figuren drucken>>
+|===
+****
+
+=== Anleitungen
+
+==== Spielkasten zusammenbauen
+
+****
+
+benötigtes Material:
+|===
+| Beschreibung | Anzahl
+| link:https://www.amazon.de/-/en/dp/B08T73QL92?psc=1[Pisichen Monitor 13,3 Zoll FHD IPS Screen] | 1
+| link:https://www.amazon.de/-/en/gp/product/B09PV2DL6L/ref=ox_sc_saved_title_4?smid=&psc=1[mini HDMI zu HDMI Kabel] | 1x1m
+| link:https://mikroshop.ch/inside.html?gruppe=10&artikel=1357[RFID Leser RC522] | 11
+| link:https://www.pearl.ch/de/10er-set-nfc-tag-sticker-kompatibel-zu-ios-und-android-apps-zx5147.html[RFID Sticker] | 2x10.-
+| link:https://www.pi-shop.ch/raspberry-pi-4-model-b-4gb[Raspberry Pi 4] | 1
+| link:https://mikroshop.ch/inside.html?gruppe=3&artikel=501[Arduino Uno] | 1
+| link:https://mikroshop.ch/inside.html?gruppe=10&artikel=1680[Raspberry Pi Prototyp Board] | 1
+| link:https://mikroshop.ch/inside.html?gruppe=10&artikel=272[Lochstreifenraster Platine] | 1
+| link:https://shop.griederbauteile.ch/product_info.php?cPath=1500_1505_1507&products_id=8033[Schaltlitze H05V-K 0.25mm2 rot] | 1x10m
+| link:https://shop.griederbauteile.ch/product_info.php?manufacturers_id=45&products_id=8029[Schaltlitze H05V-K 0.25mm2 schwarz] | 1x10m
+| link:https://shop.griederbauteile.ch/product_info.php?cPath=1500_1505_1507&products_id=8039[Schaltlitze H05V-K 0.25mm2 grün] | 1x10m
+| link:https://shop.griederbauteile.ch/product_info.php?cPath=1500_1505_1507&products_id=8047[Schaltlitze H05V-K 0.25mm2 weiss] | 1x10m
+| link:https://shop.griederbauteile.ch/product_info.php?cPath=1500_1505_1507&products_id=8037[Schaltlitze H05V-K 0.25mm2 gelb] | 1x10m
+| link:https://shop.griederbauteile.ch/product_info.php?cPath=1500_1505_1507&products_id=8041[Schaltlitze H05V-K 0.25mm2 dunkel blau] | 1x10m
+| link:https://mikroshop.ch/inside.html?gruppe=10&artikel=1091[Schaltdraht Braun] | 1x10m
+| link:https://mikroshop.ch/inside.html?gruppe=10&artikel=1817[Elektroniklot Sn60Pb40 0.5mm] | 1x100g
+| link:https://www.hornbach.ch/de/p/brilliantshine-kunstharz-glasklar-giessharz-750-ml/10360487/[Epoxid Kunstharz crystal clear] | 1x750g
+| link:https://toom.de/p/mdf-platte-roh-2800-x-2070-x-16-mm/7100542[Holzzuschnitt 16mm MDF] | 1x414.5mm*468mm 2x416.5mm*655mm
+| link:https://toom.de/p/bastlerglas-klar-50-x-100-x-04-cm/3400125[Hobbyglas klar] | 1x500mm*500mm*4mm 1x250mm*500mm*4mm
+| link:https://toom.de/p/rechteckleiste-kiefer-2400-x-30-x-20-mm/7168601[Kieferlatte] | 2x20mm*30mm*1000mm
+| link:https://www.isenegger.ch/[Plot (Druck der Karte)] | 1
+| link:https://www.obi.de/holzschrauben-sets/spax-assorter-kreuzschlitz-z-gelb/p/1868777[Spax Assorter Kreuzschlitz Z Gelb]
+|===
+
+benötigtes Werkzeug:
+|===
+| Position | Name | Beschreibung/Funktion
+| 1 | Kreissäge | Zuschneiden der Holzplatten nach Bauplan
+| 2 | Akku-Bohrschrauber | Verschrauben der Platten und das dazu nötige Vorbohren
+| 3 | Bit-Set | Passende Bits für die Schrauben
+| 4 | Holzbohrer 3mm | Vorbohren der Schrauben um das Risikon von ausreisen zu minimieren
+| 5 | Metermass | Einzeichnen des Plans auf der Holzplatte
+| 6 | Bleistift | Einzeichnen
+
+|===
+
+Die Holzplatten wurden nach folgenden Plan zusammengebaut:
+
+image::plan1.jpg["Bauplan Seite 1:"]
+
+image::plan2.jpg["Bauplan Seite 2:"]
+
+image::plan3.jpg["Bauplan Seite 3:"]
+
+image::plan4.jpg["Bauplan Seite 4:"]
+
+****
+
+==== RaspberryPi aufsetzen
+
+****
+benötigtes Werkzeug:
+
+* USB Tastatur
+* USB Maus
+* Computer
+* MicroSD-Kartenleser
+
+Vorgehen:
+
+Die MicroSD des RaspberryPi's entfernen und am Computer alle Daten auf der Karte löschen.
+
+Wir verwenden das Betriebssystem Raspbian, wie dieses korrekt installiert wird, kann unter den folgenden Links nachgelesen werden belassen Sie den :
+
+https://www.elektronik-kompendium.de/sites/raspberry-pi/2111401.htm[Raspberry Pi OS: Installieren und sichern]
+
+https://www.elektronik-kompendium.de/sites/raspberry-pi/1905261.htm[Raspberry Pi OS: Erste Schritte auf dem Desktop]
+
+
+Den Bildschirm über HDMI mit dem RaspberryPi verbinden und ihn anschlschliessend einschalten. Sobald der RaspberryPi gestartet hat kann in den Einstellungen die Bildschirmauflösung auf 1920x1080 gestellt werden.
+
+Anschliessend über die Einstellungen eine Internetverbindung herstellen, dann das Terminal öffnen und die folgenden Befehle ausführen.
+
+....
+sudo apt update -y
+sudo apt install git default-jdk maven -y
+....
+
+In der Datei "/etc/xdg/lxsession/LXDE-pi/autostart" die folgende Zeile *am Ende der Datei* hinzufügen.
+....
+@lxterminal -e ssh pi@127.0.0.1 -t ssh pi@127.0.0.1 -t 'sh /home/pi/graue-energie/autostart.sh; bash -l'
+....
+
+Als letztes den Raspberry Pi neu starten.
+....
+sudo reboot
+....
+****
+
+==== Software Umweltbelastung auf den RaspberryPi laden und starten
+
+****
+Diese Anleitung setzt voraus, dass der RaspberryPi richtig aufgesetzt ist, siehe dafür <<RaspberryPi aufsetzen>>.
+
+benötigtes Werkzeug:
+
+* USB Tastatur
+* USB Maus
+
+Vorgehen:
+
+Sicherstellen, dass der RaspberryPi eine aktive Internetverbindung hat und anschliessend das Terminal öffnen.
+
+Überprüfen ob das Verzeichniss /graue-energie falls das Verzeichnis nicht existiert kann das Git Repository mit dem folgenden Befehl gecloned werden:
+....
+git clone https://gitlab.fhnw.ch/ip12-22vt/ip12-22vt_graueenergie/graue-energie.git
+....
+
+Anschliessend kann mit dem nächsten Befehl in das Verzeichnis graue-energie gewechselt werden:
+....
+cd /graue-energie
+....
+
+Anschliessend die folgenden Befehle ausführen um die neuste Version der Software zu erhalten und die Dependencies zu installieren:
+
+....
+git fetch
+git pull
+mvn install
+....
+
+Um das Programm zu starten, kann schliesslich folgender Befehl ausgeführt werden:
+
+....
+mvn javafx:run
+....
+****
+
+==== Software ReadScanners auf den Arduino laden
+
+****
+benötigtes Werkzeug:
+
+* Computer mit USB A Anschluss
+
+Vorgehen:
+
+Den Arduino über USB A mit dem Computer verbinden.
+
+Die Arduino IDE auf dem Computer installieren, sie kann unter dem folgenden Link heruntergeladen werden: https://www.arduino.cc/en/software[Arduino IDE]
+
+Anschliessend das File ReadScanners.c in der Arduino IDE öffnen und oben links in der Statusleiste den Upload Knopf drücken, dieser Knopf ist durch einen Pfeil nach rechts zu erkennen.
+
+Nachdem der Knopf gedrückt wurde, ist das Programm auf dem Arduiono gespeichert und dieser kann wieder per USB A mit dem RaspberryPi verbunden werden.
+
+****
+
+==== RFID Scanner verkabeln
+
+****
+benötigtes Werkzeug:
+|===
+| Position | Name | Beschreibung/Funktion
+| 1 | Lötkolben | Verlöten der Kabel
+| 2 | Schraubendreher | Verschrauben der Scanner auf dem Spielfeld
+| 3 | Abisolierzange | Abisolieren der Kabelummantelung
+| 4 | Seitenschneider | Sauberes abschneiden der Kabel
+| 5 | Entlötlitzen | Zum säubern von lötstellen
+|===
+
+Die Elektronikkomponenten wurden nach folgenden Schema verlötet.
+
+image::elektronik_plan.jpg["Verkabelung:"]
+
+****
+
+==== Buttons Verkabeln
+
+****
+benötigtes Werkzeug:
+Bohrmaschine
+Lötkolben
+Abisolier Zange
+Seitenschneider
+Holzbohrer 25mm
+
+1. Markieren der Bohrlöcher auf der Vorderseite des Spielkasten
+2. Mit holzbohrer 25mm grosses loch Bohren
+3. Knöpfe durch verschrauben mit Gewinde montieren
+4. Alle Ground Kabel der LEDs nach Verkabelungsplan zusammen Löten
+5. Ground Kabel mit Ground auf RaspberriPi verbinden
+6. Button seite 1 mit Ground Verbinden
+7. Alle Buttons direkt mit einem Kabel am Raspberri Pi verbinden (pinout im Verkabelungsplan)
+
+benötigtes Werkzeug:
+|===
+| Position | Name | Beschreibung/Funktion
+| 1 | Lötkolben | Verlöten der Kabel
+| 2 | Schraubendreher | Verschrauben der Scanner auf dem Spielfeld
+| 3 | Abisolierzange | Abisolieren der Kabelummantelung
+| 4 | Seitenschneider | Sauberes abschneiden der Kabel
+| 5 | Entlötlitzen | Zum säubern von lötstellen
+|===
+
+Die Buttons wurden nach folgendem Schema verlötet.
+
+image::verkabelungButtons.jpg["Verkabelung Buttons"]
+
+****
+
+==== Figuren drucken
+
+****
+
+Die Figuren wurden 3D gedruckt. Die Dateinen welche wir verwendet haben sind in diesem Verzeichniss im Ordner "druckmodelle" zu finden.
+
+Die Figuren können anschliessend mit Acrylfarbe bemalt werden, dabei können die folgenden Bilder als Referenz verwendet werden.
+
+image::figuren1.jpeg["Figuren 1"]
+image::figuren2.jpeg["Figuren 2"]
+
+****

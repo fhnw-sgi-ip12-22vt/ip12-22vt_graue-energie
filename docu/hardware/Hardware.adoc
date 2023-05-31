@@ -1,0 +1,55 @@
+_Hier stehen die Informationen zur Hardware._
+
+Informationen zum Erstellen und Zusammenbauen finden sie hier: https://www.cs.technik.fhnw.ch/confluence20/display/IP1222vt/Material[]
+
+Für unser Projekt werden wir mehrere RFID-Scanner (Typ RC522) benutzen, um die Position der Figuren zu bestimmen zu können.
+Diese Scanner werden mit den Raspberry Pi verbunden. Ebenfalls werden wir zusätzliche und grafische Informationen auf einem Display darstellen. Wie dieses Display umgesetzt wird ist noch nicht entschieden. 
+
+== Hardware
+
+=== Materialliste
+Hier finden sie eine Auflistung des Materials, welche für den bau des Produktes benötigt wird.
+
+|===
+| Beschreibung | Anzahl | Preis (pro Stück) | Lieferant / Shop
+| link:https://www.amazon.de/-/en/dp/B08T73QL92?psc=1[Pisichen Monitor 13,3 Zoll FHD IPS Screen] | 1 | 94.- | Amazon.de
+| link:https://www.amazon.de/-/en/gp/product/B09PV2DL6L/ref=ox_sc_saved_title_4?smid=&psc=1[mini HDMI zu HDMI Kabel] | 1x1m | 10.- | Amazon.de
+| link:https://mikroshop.ch/inside.html?gruppe=10&artikel=1357[RFID Leser RC522] | 11 | 2,9.- | mikroshop
+| link:https://www.pearl.ch/de/10er-set-nfc-tag-sticker-kompatibel-zu-ios-und-android-apps-zx5147.html[RFID Sticker] | 2x10.- | 8,95.- | Pearl
+| link:https://www.pi-shop.ch/raspberry-pi-4-model-b-4gb[Raspberry Pi 4] | 1 | 50.- | Bereitgestellt durch FHNW
+| link:https://mikroshop.ch/inside.html?gruppe=3&artikel=501[Arduino Uno] | 1 | 11.- | mirkoshop
+| link:https://mikroshop.ch/inside.html?gruppe=10&artikel=1680[Raspberry Pi Prototyp Board] | 1 | 3,1.- | mikroshop
+| link:https://mikroshop.ch/inside.html?gruppe=10&artikel=272[Lochstreifenraster Platine] | 1 | 1,9.- | mikroshop
+| link:https://shop.griederbauteile.ch/product_info.php?cPath=1500_1505_1507&products_id=8033[Schaltlitze H05V-K 0.25mm2 rot] | 1x10m | 4,9.- | mikroshop
+| link:https://shop.griederbauteile.ch/product_info.php?manufacturers_id=45&products_id=8029[Schaltlitze H05V-K 0.25mm2 schwarz] | 1x10m | 4,9.- | mikroshop
+| link:https://shop.griederbauteile.ch/product_info.php?cPath=1500_1505_1507&products_id=8039[Schaltlitze H05V-K 0.25mm2 grün] | 1x10m | 4,9.- | mikroshop
+| link:https://shop.griederbauteile.ch/product_info.php?cPath=1500_1505_1507&products_id=8047[Schaltlitze H05V-K 0.25mm2 weiss] | 1x10m | 4,9.- | mikroshop
+| link:https://shop.griederbauteile.ch/product_info.php?cPath=1500_1505_1507&products_id=8037[Schaltlitze H05V-K 0.25mm2 gelb] | 1x10m | 4,9.- | mikroshop
+| link:https://shop.griederbauteile.ch/product_info.php?cPath=1500_1505_1507&products_id=8041[Schaltlitze H05V-K 0.25mm2 dunkel blau] | 1x10m | 4,9.- | mikroshop
+| link:https://mikroshop.ch/inside.html?gruppe=10&artikel=1091[Schaltdraht Braun] | 1x10m | 2,8.- | mikroshop
+| link:https://mikroshop.ch/inside.html?gruppe=10&artikel=1817[Elektroniklot Sn60Pb40 0.5mm] | 1x100g | 9,8.- | mikroshop
+| link:https://www.hornbach.ch/de/p/brilliantshine-kunstharz-glasklar-giessharz-750-ml/10360487/[Epoxid Kunstharz crystal clear] | 1x750g | 35,85.- | Hornbach Binzen
+| link:https://toom.de/p/mdf-platte-roh-2800-x-2070-x-16-mm/7100542[Holzzuschnitt 16mm MDF] | 1x414.5mm*468mm 2x416.5mm*655mm | 4,2.- | Toom Rheinfelden
+| link:https://toom.de/p/bastlerglas-klar-50-x-100-x-04-cm/3400125[Hobbyglas klar] | 1x500mm*500mm*4mm 1x250mm*500mm*4mm | 14.- + 7.- | Toom Rheinfelden
+| link:https://toom.de/p/rechteckleiste-kiefer-2400-x-30-x-20-mm/7168601[Kieferlatte] | 2x20mm*30mm*1000mm | 4.- | Toom Rheinfelden
+| link:https://www.isenegger.ch/[Plot (Druck der Karte)] | 1 | 10.- | Isenegger GMBH
+| link:https://www.obi.de/holzschrauben-sets/spax-assorter-kreuzschlitz-z-gelb/p/1868777[Spax Assorter Kreuzschlitz Z Gelb] | 1 | 17.- | Obi 
+| link:https://www.amazon.de/dp/B01MSNXLN0[60mm LED Buttons] | 1x5 | 16.- | Amazon.de
+| link:https://www.amazon.de/dp/B0868SDMCW[Acrylfarben Set mit Pinsel] | 1 | 13.- | Amazon.de
+|===
+
+=== Werkzeugliste
+
+Hier finden Sie alle Werkzeuge, welche wir für das Bauen unseres Produktes verwendet haben. Die Werkzeuge werden nicht von uns bereitgestellt.
+
+* Lötkolben
+* Elektrozange
+* Abisolationszange
+* Multimeter
+* Kreissäge
+* Akkuschrauber
+* Schraubenzieher
+* USB Maus
+* USB Tastatur
+* Computer mit USB A Buchse
+* Micro SD Kartenleser

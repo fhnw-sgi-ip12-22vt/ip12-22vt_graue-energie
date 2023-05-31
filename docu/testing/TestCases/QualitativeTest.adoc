@@ -1,0 +1,36 @@
+== Testfallspezifikationen
+|===
+| *Qualitätsszenario* | B1
+| *ID* | B1.1
+| *Beschreibung* | Die RFID-Scanner sollen zuverlässig, auch nach dem neu starten, funktionieren.
+| *Vorbedingungen* | RaspberryPi und Scanner sind entsprechend dem UML Deployment Diagramm im SAD Kapitel 7 richtig deployed und gestartet.
+| *Vorgehen* | Überprüfen ob die RFID Scanner eine Karte korrekt einlesen, das ergebnis notieren. Das komplete System neu starten und diesen Vorgang 10 mal wiederholen.
+| *Akzeptanzkriterien* | Die RFID Sensoren funktionieren mindestens 8/10 Fällen korrekt.
+|===
+
+|===
+| *Qualitätsszenario* | C1
+| *ID* | C1.1
+| *Beschreibung* | Nach dem platzieren einer Figur soll das Display schnell reagieren, um einen angenehen Spielfluss sicherstellen zu können.
+| *Vorbedingungen* | RaspberryPi und Scanner sind entsprechend dem UML Deployment Diagramm im SAD Kapitel 7 richtig deployed und gestartet. Eine Stopuhr bereithalten
+| *Vorgehen* | Eine Figur auf einem RFID-Scanner platzieren und die Zeit messen und den Vorgang 10 mal wiederholen.
+| *Akzeptanzkriterien* | Die Durchschnittliche Reaktionzeit des Displays ist < 1.2 Sekunden (1 Sekunde + 0.2 Sekunden für die Reaktionszeit des Testers).
+|===
+
+|===
+| *Qualitätsszenario* | D1
+| *ID* | D1.1
+| *Beschreibung* | Die Figur soll robust und widerstandsfähig sein. Sie soll einen Fall von Brusthöhe (1.5m) ohne Schaden bestehen.
+| *Vorbedingungen* | Keine.
+| *Vorgehen* | Figur nehmen und von der Brusthöhe fallen lassen.
+| *Akzeptanzkriterien* | Figur hat keinen Schaden genommen und keine Kratzer.
+|===
+
+== Testprotokolle 
+|===
+| Datum | ID | Ergebniss | Bemerkung
+| 24.4.2023 | B1.1 | Nicht Erfolgreich | Entsprechendes Arbeitspaket erfasst um dieses Problem zu lösen.
+| 27.5.2023 | B1.1 | Erfolgreich |
+| 24.4.2023 | C1.1 | Erfolgreich | 
+|===
+

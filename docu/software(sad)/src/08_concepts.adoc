@@ -1,0 +1,48 @@
+[[section-concepts]]
+== Querschnittliche Konzepte
+
+[role="arc42help"]
+****
+.Inhalt
+In diesem Abschnitt werden Konzepte beschrieben, welche innerhalb der Laufzeit des Projektes erstellt wurden.
+
+.Skizze
+In einer ersten Skizze wurden alle Komponenten aufgelistet und dargestellt. Diese zeigen jegliche Komponenten welche aus Verbrauchern, Energiequellen sowie der Umwelt bestehen. Zudem werden auch das Spielbrett sowie die Anzeige dargestellt.
+
+image::skizze_graueEnergie.png[Skizze für alle Komponenten und Spielbrett,640,480 ]
+
+.Erster Prototyp
+Wir haben einen ersten Prototyp aus simplen Komponenten erstellt welcher visuell darstellen soll wie das finale Produkt in etwa aussehen soll. Dieser zeigt lediglich, wie die Komponenten zusammenhängen und wie sie sich verhalten sollten. Er ist nicht vollständig und wird nicht in die Architektur aufgenommen. So zeigt die Darstellung eine Komponente als Stadt, eine Energiequelle und wie diese dann verbunden sind.
+
+image::Erster_Prototyp.png[Erster Prototyp,640,480]
+
+.Schaltplan Scanner
+Für das Erkennen der Spielfiguren werden RFID-Scanner verwendet. Dafür müssen diese an das Rasperry Pi angeschlossen werden. Dafür haben wir eine Vorlage für einen Schaltplan verwendet welche als Vorlage diente für unseren Prototypen.
+
+image::Schaltplan_Scanner.png[Schaltplan für den Scanner,640,480]
+
+.Prototyp Scanner
+Aufgrund der Vorlage erstellen wir ein erster Prototyp, um den POC für die Scanner zu realisieren. Wir testeten dieses zu Beginn nur mit einem einzigen Scanner, welchen einen RFID-Chip erkenne und Feedback geben sollte. 
+
+image::Prototyp_Scanner.png[Prototyp für den Scanner,640,480]
+
+.Simulation des Spieles
+
+Damit der Kunde eine grobe Vorstellung davon bekommt, wie das Spiel funktioniert, haben wir eine Simulation als Präsentation erstellt und sie dem Kunden präsentiert. Dieser gab uns Feedback für Verbesserungen und Änderungen. Diese Präsentation kann unter folgendem Link eingesehen werden:
+
+https://www.cs.technik.fhnw.ch/confluence20/display/VT122207/Spielsimulationen
+
+.Prototyp nach der Projektwoche
+
+Innerhalb der Projektwoche konnten wir grosse Fortschritte mit unserem Produkt realisieren. Dazu gehören das Einbinden mehrerer Scanner welche unterschiedliche Chips scannen und identifizieren können, die Scanner welche ebenfalls identifiziert werden können, LED's welche angesteuert werden können und auf Events wie beispielsweise das lesen von Chips reagieren und Feedback geben sowie das Einbinden eines Display welches ebenfalls Feedback gibt.
+
+image::Prototyp_Projektwoche1.png[Prototyp nach der Projektwoche 1,640,480]
+
+image::Prototyp_Projektwoche2.png[Prototyp nach der Projektwoche 2,640,480]
+
+image::Prototyp_Projektwoche3.png[Prototyp nach der Projektwoche 3,640,480]
+
+image::Prototyp_Projektwoche4.png[Prototyp nach der Projektwoche 4,640,480]
+
+****
+

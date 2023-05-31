@@ -1,0 +1,178 @@
+{
+  "1": [
+    {
+      "question": "Wie lange dauert der Rückbau eines Atomkraftwerks?",
+      "answers": [
+        "1 Jahr",
+        "5 Jahre",
+        "10 Jahre",
+        "20 Jahre"
+      ],
+      "correctAnswerId": 3
+    },
+    {
+      "question": "Wie lang gilt Uran als radioaktiv?",
+      "answers": [
+        "1 Jahr",
+        "5 Jahre",
+        "10 Jahre",
+        "20 Jahre"
+      ],
+      "correctAnswerId": 3
+    },
+    {
+      "question": "Was kommt bei einem Atomkraftwerk aus dem Kühlturm raus?",
+      "answers": [
+        "Co2",
+        "Wasserdampf",
+        "Rauch",
+        "Zuckerwatte"
+      ],
+      "correctAnswerId": 1
+    },
+    {
+      "question": "Was sind die Risiken bei einem Atomkraftwerk?",
+      "answers": [
+        "Unfälle wie Kernschmelzen und radioaktive Kontamination von Umwelt und Menschen",
+        "Treibhausgase und damit verbundene globale Erwärmung",
+        "giftige Abgasen wie Stickoxiden und Schwefeldioxid in die Umwelt",
+        "Erdbeben und Tsunamis in der Nähe von Atomkraftwerken."
+      ],
+      "correctAnswerId": 0
+    },
+    {
+      "question": "Wieso braucht ein Atomkraftwerk Wasser?",
+      "answers": [
+        "Um Dampf zu erzeugen, der eine Turbine antreibt und Strom erzeugt.",
+        "Um radioaktive Strahlung zu absorbieren und die Sicherheit des Kraftwerks zu gewährleisten.",
+        "Um die Kernreaktionen innerhalb des Kraftwerks zu kontrollieren und zu kühlen.",
+        "Um das Kraftwerk vor Überhitzung zu schützen."
+      ],
+      "correctAnswerId": 0
+    }
+  ],
+  "2": [
+    {
+      "question": "Wie wird in einem Kohlekraftwerk aus Kohle Energie gewonnen? ",
+      "answers": [
+        "Kohle wird verbrannt, um Dampf zu erzeugen. Dieser Dampf treibt dann eine Turbine an, die wiederum Strom erzeugt.",
+        "Kohle wird zu flüssigem Metall geschmolzen und dieses Metall wird dann in Generatoren verarbeitet, um Energie zu erzeugen.",
+        "Kohle wird zu Gas verarbeitet und dieses Gas wird dann in einem Generator verbrannt, um Strom zu erzeugen.",
+        "Kohle wird zu einem Pulver zermahlen und dann in großen Mengen ins Meer geleitet, um Wellenkraftwerke anzutreiben, die Strom erzeugen."
+      ],
+      "correctAnswerId": 0
+    }
+  ],
+  "3": [
+    {
+      "question": "Wie viel Prozent der Schweizer Energieschöpfung wird durch Wasserkraft gewonnen?",
+      "answers": [
+        "60%",
+        "30%",
+        "73%",
+        "46%"
+      ],
+      "correctAnswerId": 0
+    },
+    {
+      "question": "Welche Art von Wasserkraftwerk nutzt den Flusslauf zur Stromerzeugung?",
+      "answers": [
+        "Laufwasserkraftwerk",
+        "Pumpspeicherkraftwerk ",
+        "Talsperrenkraftwerk",
+        "Gezeitenkraftwerk"
+      ],
+      "correctAnswerId": 0
+    }
+  ],
+  "4": [
+    {
+      "question": "Was ist das Wichtigste für ein Windkraftwerk?",
+      "answers": [
+        "Die Windquelle",
+        "Generator",
+        "Klimaanlage",
+        "Internetverbindung"
+      ],
+      "correctAnswerId": 0
+    },
+    {
+      "question": "Was ist der geeignetste Standort für ein Windkraftwerk?",
+      "answers": [
+        "Offene Flächen",
+        "tropische Regenwälder",
+        "Stadt",
+        "Unterwassertunnel"
+      ],
+      "correctAnswerId": 0
+    }
+  ],
+  "5": [
+    {
+      "question": "Wie viel Prozent weniger Strom produziert ein Solarkraftwerk bei bewölktem Wetter?",
+      "answers": [
+        "Bis zu 90%",
+        "Bis zu 70%",
+        "Bis zu 50%",
+        "Bis zu 20%"
+      ],
+      "correctAnswerId": 0
+    },
+    {
+      "question": "Zu welcher Jahreszeit produziert eine Solaranlage am meisten Strom?",
+      "answers": [
+        "Frühling",
+        "Sommer",
+        "Herbst",
+        "Winter"
+      ],
+      "correctAnswerId": 1
+    }
+  ],
+  "10": [
+    {
+      "question": "Wie viel Strom verbraucht die Stadt Zürich?",
+      "answers": [
+        "9'400 GW/h im Jahr",
+        "2'000 GW/h im Jahr",
+        "25'000 GW/h im Jahr",
+        "18'254 GW/h im Jahr"
+      ],
+      "correctAnswerId": 0
+    }
+  ],
+  "11": [
+    {
+      "question": "Wie viel Strom verbraucht ein Dorf im Durchschnitt?",
+      "answers": [
+        "1'700 GW/h im Jahr",
+        "150 GW/h im Jahr",
+        "10'000 GW/h im Jahr",
+        "4'100 GW/h im Jahr"
+      ],
+      "correctAnswerId": 0
+    }
+  ],
+  "12": [
+    {
+      "question": "Wie viel Strom verbraucht die Industrie in der Schweiz?",
+      "answers": [
+        "170'000 GW/h im Jahr",
+        "9'000 GW/h im Jahr",
+        "17'000 GW/h im Jahr",
+        "33'000 GW/h im Jahr"
+      ],
+      "correctAnswerId": 2
+    },
+    {
+      "question": "Wie viel Strom benötigt die Schweiz in einem ganzen Jahr?",
+      "answers": [
+        "180'000 GW/h im Jahr",
+        "32'000 GW/h im Jahr",
+        "12'121 GW/h im Jahr",
+        "58'113 GW/h im Jahr"
+      ],
+      "correctAnswerId": 3
+    }
+  ]
+}

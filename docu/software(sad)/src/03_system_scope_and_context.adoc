@@ -1,0 +1,48 @@
+[[section-system-scope-and-context]]
+== Kontextabgrenzung
+
+[role="arc42help"]
+****
+
+****
+
+=== Fachlicher Kontext
+
+[role="arc42help"]
+****
+image::Fachlicher_Kontext.png["Fachlicher Kontext"]
+
+.Benutzer
+Der Benutzer bedient das Spiel und führt eine Partie durch. Er benutzt das System.
+
+.Informationsbeschaffung
+Informationen rund um die Umweltbelastungspunkte sowie Berechnungen, welche das System durchführen muss, um diese anzuzeigen werden vom Team recherchiert. Mehr Informationen zur Recherche sowie Ideenfindung können auf der Confluence https://www.cs.technik.fhnw.ch/confluence20/display/VT122207/E-Portfolio[Seite] gefunden werden.
+****
+
+=== Technischer Kontext
+
+[role="arc42help"]
+****
+image::Technischer_Kontext.png["Technischer Kontext"]
+
+.OpenJFX
+Diese Library wird benutzt um Anziegen mit Java zu erstellen. Sie wird für die Erstellung des Bildschirms verwendet.
+
+.Jakarta.persistence
+Wird für Serialisierung unserer Figuren benutzt.
+
+.JUnit
+Wird für die Erstellung und Ausführung von Tests verwendet.
+
+.google.code.gson
+Wird ebenfalls für Serialisierung und speichern in JSON verwendet.
+
+.java-native.jssc
+Wird für die Kommunikation mit Ports verwendet.
+
+.Bildschirm
+Auf dem Bildschirm werden Kalkulationen vom System sowie die Wechselwirkung zwischen Verbrauchern und Energiequellen angezeigt. Die Schnittstelle hierfür ist noch nicht bekannt jedoch wird sie eine grosse Ähnlichkeit mit der JavaFX Library haben.
+
+****
+
+
